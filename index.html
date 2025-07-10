@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Management System</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Student Management System</h1>
+    <form id="student-form">
+      <input type="text" id="name" placeholder="Student Name" required />
+      <input type="number" id="roll" placeholder="Roll Number" required />
+      <input type="text" id="course" placeholder="Course" required />
+      <button type="submit">Add Student</button>
+    </form>
+
+    <h2>Student List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Roll Number</th>
+          <th>Course</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="student-list">
+        <!-- Students will appear here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
